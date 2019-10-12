@@ -1,0 +1,297 @@
+x = [1 3 5 7 9]
+
+x =
+
+     1     3     5     7     9
+
+x = [2, 4, 6, 8, 10]
+
+x =
+
+     2     4     6     8    10
+
+x = [1, 2 3 4, 5]
+
+x =
+
+     1     2     3     4     5
+
+y = [6; 7; 8; 9; 10]
+
+y =
+
+     6
+     7
+     8
+     9
+    10
+
+y'
+
+ans =
+
+     6     7     8     9    10
+
+whos
+  Name      Size            Bytes  Class     Attributes
+
+  ans       1x5                40  double              
+  x         1x5                40  double              
+  y         5x1                40  double              
+
+who
+
+Your variables are:
+
+ans  x    y    
+
+clear ans
+who
+
+Your variables are:
+
+x  y  
+
+help who
+ <strong>who</strong>    List current variables.
+    <strong>who</strong> lists the variables in the current workspace.
+ 
+    In a nested function, variables are grouped into those in the nested
+    function and those in each of the containing functions.  <strong>who</strong> displays
+    only the variables names, not the function to which each variable
+    belongs.  For this information, use WHOS.
+ 
+    WHOS lists more information about each variable.
+    <strong>who</strong> GLOBAL and WHOS GLOBAL list the variables in the global workspace.
+    <strong>who</strong> -FILE FILENAME lists the variables in the specified .MAT file.
+ 
+    <strong>who</strong> ... VAR1 VAR2 restricts the display to the variables specified. The
+    wildcard character '*' can be used to display variables that match a
+    pattern.  For instance, <strong>who</strong> A* finds all variables in the current
+    workspace that start with A.
+ 
+    <strong>who</strong> -REGEXP PAT1 PAT2 can be used to display all variables matching the
+    specified patterns using regular expressions. For more information on
+    using regular expressions, type "doc regexp" at the command prompt.
+ 
+    Use the functional form of <strong>who</strong>, such as <strong>who</strong>('-file',FILE,V1,V2),
+    when the filename or variable names are stored as a character vector or 
+    string scalar. 
+ 
+    S = <strong>who</strong>(...) returns a cell array containing the names of the variables
+    in the workspace or file. You must use the functional form of <strong>who</strong> when
+    there is an output argument.
+ 
+    Examples for pattern matching:
+        who a*                      % Show variable names starting with "a"
+        who -regexp ^b\d{3}$        % Show variable names starting with "b"
+                                    %   and followed by 3 digits
+        who -file fname -regexp \d  % Show variable names containing any
+                                    %   digits that exist in MAT-file fname
+ 
+    See also <a href="matlab:help whos">whos</a>, <a href="matlab:help clear">clear</a>, <a href="matlab:help clearvars">clearvars</a>, <a href="matlab:help save">save</a>, <a href="matlab:help load">load</a>.
+
+    <a href="matlab:doc who">Documentation for who</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('who')">Other functions named who</a>
+
+u = [0 : 8]
+
+u =
+
+  Columns 1 through 8
+
+     0     1     2     3     4     5     6     7
+
+  Column 9
+
+     8
+
+v = [0 : 2 : 8]
+
+v =
+
+     0     2     4     6     8
+
+v(1 : 3)
+
+ans =
+
+     0     2     4
+
+v(1 : 2 : 4)
+
+ans =
+
+     0     4
+
+A = [1 2 3; 3 4 5; 6 7 8]
+
+A =
+
+     1     2     3
+     3     4     5
+     6     7     8
+
+A = [
+1 2 3
+3 4 5
+6 7 8]
+
+A =
+
+     1     2     3
+     3     4     5
+     6     7     8
+
+A(3, 3)
+
+ans =
+
+     8
+
+A(4, 1)
+{Index in position 1 exceeds array bounds (must
+not exceed 3).
+} 
+A(1 : 2, 2 : 3)
+
+ans =
+
+     2     3
+     4     5
+
+A(:, 2)
+
+ans =
+
+     2
+     4
+     7
+
+A(3, :)
+
+ans =
+
+     6     7     8
+
+B = [
+-1 3 10
+-9 5 25
+0 14 2]
+
+B =
+
+    -1     3    10
+    -9     5    25
+     0    14     2
+
+s = [-1 8 5]
+
+s =
+
+    -1     8     5
+
+t = [7; 0; 11]
+
+t =
+
+     7
+     0
+    11
+
+A - 1
+
+ans =
+
+     0     1     2
+     2     3     4
+     5     6     7
+
+A + B
+
+ans =
+
+     0     5    13
+    -6     9    30
+     6    21    10
+
+s - t
+
+ans =
+
+    -8     1    -2
+    -1     8     5
+   -12    -3    -6
+
+s - t'
+
+ans =
+
+    -8     8    -6
+
+B * s
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication.
+Check that the number of columns in the first
+matrix matches the number of rows in the second
+matrix. To perform elementwise multiplication,
+use '.*'.
+} 
+B * t
+
+ans =
+
+   103
+   212
+    22
+
+x = t / B
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+} 
+x = B \ t
+
+x =
+
+    2.4307
+    0.6801
+    0.7390
+
+B * x
+
+ans =
+
+    7.0000
+   -0.0000
+   11.0000
+
+format long
+x
+
+x =
+
+   2.430715935334873
+   0.680138568129330
+   0.739030023094688
+
+s * s
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication.
+Check that the number of columns in the first
+matrix matches the number of rows in the second
+matrix. To perform elementwise multiplication,
+use '.*'.
+} 
+s .* s
+
+ans =
+
+     1    64    25
+
+s .^ 2
+
+ans =
+
+     1    64    25
+
+diary Section2_2_Instructions
