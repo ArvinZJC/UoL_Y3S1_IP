@@ -1,0 +1,62 @@
+x = -3 : .01 : 3;
+plot(x, eff(x))
+grid
+fzero("eff", -0.5)
+
+ans =
+
+   -0.7035
+
+eff(-0.7035)
+
+ans =
+
+  -6.1957e-05
+
+format long
+fzero("eff", -0.5)
+
+ans =
+
+  -0.703467422498392
+
+eff(ans)
+
+ans =
+
+     0
+
+plot(x, humps(x))
+grid
+fminbnd("humps", 0.5, 1)
+
+ans =
+
+   0.637010674590588
+
+humps(ans)
+
+ans =
+
+  11.252754126564305
+
+quad("eff", 0, 1)
+
+ans =
+
+   1.384948498868295
+
+quad("sin", 0, pi)
+
+ans =
+
+   1.999999996398431
+
+fun = @(x) sin(x);
+integral(fun, 0, pi)
+
+ans =
+
+   2.000000000000000
+
+diary Section4_2_Instructions

@@ -1,0 +1,9 @@
+x = -1 : 0.01 : 1;
+fx = x .^ 2;
+gx = x .^ 3;
+plot(x, fx, "k", x, gx, "r--")
+xlabel("x")
+ylabel("y")
+legend("f(x)", "g(x)")
+
+diary Section2_4_Exercises

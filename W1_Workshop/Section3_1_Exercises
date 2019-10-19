@@ -1,0 +1,34 @@
+rand_int(1, 10)
+
+ans =
+
+     8
+
+rand_int(1, 10)
+
+ans =
+
+     6
+
+rand_int(-5, 5)
+
+ans =
+
+     0
+
+rand_int(-5, 5)
+
+ans =
+
+     4
+
+rand_int(-5, 5)
+
+ans =
+
+    -3
+
+help rand_int
+  [a] = <strong>rand_int</strong>(MIN, MAX) - Generate a random integer between MIN (included) and MAX (not included).
+
+diary Section3_1_Exercises

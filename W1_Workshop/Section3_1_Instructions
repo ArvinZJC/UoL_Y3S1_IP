@@ -1,0 +1,10 @@
+help log3
+  [a] = <strong>log3</strong>(x) - Calculate the base 3 logarithm of x.
+
+log3(5)
+
+ans =
+
+    1.4650
+
+diary Section3_1_Instructions

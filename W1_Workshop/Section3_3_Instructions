@@ -1,0 +1,41 @@
+x = -1 : 0.01 : 1;
+for i = 1 : length(x)
+      if x(i) < 0.5
+        F(i) = x(i) ^ 2;
+      else
+        F(i) = 0.25;
+      end
+   end
+plot(x, F, "-k")
+
+A = rand(3)
+
+A =
+
+    0.8147    0.9134    0.2785
+    0.9058    0.6324    0.5469
+    0.1270    0.0975    0.9575
+
+chk_inv(A)
+
+ans =
+
+   -1.9958    3.0630   -1.1690
+    2.8839   -2.6919    0.6987
+   -0.0291   -0.1320    1.1282
+
+chk_inv(rand(3, 4))
+Matrix is not square.
+
+A = [1 2 3; 1, 2, 3; 4 5, 6];
+
+chk_inv(A)
+Matrix is singular
+
+fact(5)
+
+ans =
+
+   120
+
+diary Section3_3_Instructions

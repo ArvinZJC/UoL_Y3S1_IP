@@ -1,0 +1,23 @@
+log3_v2(-1)
+x should not be negative.
+log3_v2(0)
+x should not be 0.
+log3_v2(100)
+
+ans =
+
+    4.1918
+
+div5(5.5)
+x is NOT divisible by 5.
+
+div5(10)
+
+ans =
+
+     2
+
+div5(6)
+x is NOT divisible by 5.
+
+diary Section3_3_Exercises

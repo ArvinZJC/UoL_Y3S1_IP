@@ -1,0 +1,26 @@
+x = [1, 2];
+y = [1 4 8];
+z = polyadd(x, y)
+
+z =
+
+     1     5    10
+
+
+fx = [1, -1, -3, 0];
+points = roots(polyder(fx))
+
+points =
+
+   -0.7208
+    1.3874
+
+x = -10 : 0.01 : 10;
+plot(x, polyval(fx, x))
+xlabel("x")
+ylabel("f(x)")
+grid
+text(points(1), polyval(fx, points(1)), "*", "Color", "r")
+text(points(2), polyval(fx, points(2)), "o", "Color", "g")
+
+diary Section4_1_Exercises
