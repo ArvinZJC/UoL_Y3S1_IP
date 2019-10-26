@@ -6,7 +6,7 @@ for i = 1 : length(x)
         F(i) = 0.25;
       end
    end
-plot(x, F, "-k")
+plot(x, F, '-k')
 
 A = rand(3)
 

@@ -1,7 +1,7 @@
 x = -3 : .01 : 3;
 plot(x, eff(x))
 grid
-fzero("eff", -0.5)
+fzero('eff', -0.5)
 
 ans =
 
@@ -14,7 +14,7 @@ ans =
   -6.1957e-05
 
 format long
-fzero("eff", -0.5)
+fzero('eff', -0.5)
 
 ans =
 
@@ -28,7 +28,7 @@ ans =
 
 plot(x, humps(x))
 grid
-fminbnd("humps", 0.5, 1)
+fminbnd('humps', 0.5, 1)
 
 ans =
 
@@ -40,13 +40,13 @@ ans =
 
   11.252754126564305
 
-quad("eff", 0, 1)
+quad('eff', 0, 1)
 
 ans =
 
    1.384948498868295
 
-quad("sin", 0, pi)
+quad('sin', 0, pi)
 
 ans =
 

@@ -3,7 +3,7 @@ function [r] = div5(x)
 % division result as output.
 
 if rem(x, 5) ~= 0
-    disp("x is NOT divisible by 5.");
+    disp('x is NOT divisible by 5.');
     return
 else
     r = x / 5;

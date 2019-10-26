@@ -17,10 +17,10 @@ points =
 
 x = -10 : 0.01 : 10;
 plot(x, polyval(fx, x))
-xlabel("x")
-ylabel("f(x)")
+xlabel('x')
+ylabel('f(x)')
 grid
-text(points(1), polyval(fx, points(1)), "*", "Color", "r")
-text(points(2), polyval(fx, points(2)), "o", "Color", "g")
+text(points(1), polyval(fx, points(1)), '*', 'Color', 'r')
+text(points(2), polyval(fx, points(2)), 'o', 'Color', 'g')
 
 diary Section4_1_Exercises
