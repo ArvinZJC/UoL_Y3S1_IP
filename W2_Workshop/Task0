@@ -1,0 +1,45 @@
+f = imread('.\Sample_Images\chestxray.jpg');
+size(f)
+
+ans =
+
+   493   600
+
+[M, N] = size(f)
+
+M =
+
+   493
+
+
+N =
+
+   600
+
+M = size(f, 1)
+
+M =
+
+   493
+
+N = size(f, 2)
+
+N =
+
+   600
+
+whos f
+  Name        Size              Bytes  Class    Attributes
+
+  f         493x600            295800  uint8              
+
+
+f = imread('.\Sample_Images\rose_512.tif');
+whos f
+  Name        Size              Bytes  Class    Attributes
+
+  f         512x512            262144  uint8              
+
+imshow(f)
+
+diary Task0
