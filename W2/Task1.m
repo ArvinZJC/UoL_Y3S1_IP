@@ -1,3 +1,9 @@
+% MATLAB script for Task 1 of Week 2's workshop
+
+clear;
+close all;
+clc;
+
 colour_image = imread('.\Sample_Images\Lincoln.jpg');
 gray_image = rgb2gray(colour_image);
 
